@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8DCFA;
+    position: relative;
+}
+#main-card{
+    width: 80vw;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F5EFFA;
+    border-radius:10px ;
+}
+#title{
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    color:#32106B;
+    font-weight: 800;
+}
+#inputs{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 5px;
+    background-color: #FAF5FB;
+    scale: 0.9;
+    box-shadow: 0 2px 5px grey;
+    border-radius: 10px;
+}
+input{
+    width: 70%;
+    padding: 9px;
+    background-color: #FEFEFE;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    outline: none;
+}
+select{
+    width: 70%;
+    background-color: #FEFEFE;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    padding: 9px;
+}
+button{
+    width: 70%;
+    padding: 9px;
+    background-color: #6F20D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #5B17B5;
+}
+button:active{
+    background: rgba(0, 123, 255,1);
+}
+
+#expTrackTable{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    scale: 0.9;
+    background-color: #FAF5FB;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px grey;
+    padding: 10px;
+}
+table {
+    width: 100%;    
+    border-collapse: collapse;
+    font-weight: bold;
+    
+}
+#total{
+    font-size: 19px;
+    font-weight: 800;
+}
+
+th, td {
+    padding: 15px;            
+}
+
+th {
+    text-align: left;   
+    font-size: 23px;
+    color:  #32106B;
+    background: #F0E4FA;
+}
+
+td {
+    border-bottom: 1px solid #c5c5c5; 
+}
